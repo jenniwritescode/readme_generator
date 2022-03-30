@@ -58,22 +58,30 @@ function askQuestions(questions) {
   .then((answers) => {
       const { gitusername, email, title, description, install, license } = answers;
       console.log(answers);
+      return answers;
   })
   .catch((error) => {
     if (error.isTtyError) {
-      // Prompt couldn't be rendered in the current environment
+      console.log("Prompt couldn't be rendered in the current environment.");
     } else {
-      // Something else went wrong
+      console.log("Something else went wrong.");
     }
   });
 }
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+  console.log("writing to file");
+}
 
 // TODO: Create a function to initialize app
 function init() {
     askQuestions(questions);
+    // writeToFile("myMarkdown.md", answers);
+    // let licenseBadge = generateMarkdown.renderLicenseBadge(answers.license);
+    // let licenseLink = generateMarkdown.renderLicenseLink(answers.license);
+    // let licenseSec = generateMarkdown.renderLicenseSection(answers.license);
+
 }
 
 // Function call to initialize app

@@ -40,7 +40,8 @@ ${contribute}
 
 ## Contact Info
 
-**${gitname}**
+My GitHub Username is **${gitname}**.
+Please contact me via email with additional questions.
 
 - [My GitHub](https://github.com/${gitname})
 - [Email](mailto:${email})
@@ -48,20 +49,21 @@ ${contribute}
 ## Copyright and license
 
 Code and documentation: copyright 2022 ${gitname}. 
-Code released under the [${licenseBadge}](${licenseLink}) license.
+Code released under the ${license} license.
+[![License](${licenseBadge})](${licenseLink})
 `;
 }
 
 function renderLicenseBadge(license) {
   let licenseBadge = "";
   if (license == "Apache license 2.0") {
-    licenseBadge = "apache-2.0";
+    licenseBadge = "https://img.shields.io/badge/License-Apache_2.0-blue.svg";
   } else if (license == "Creative Commons license family") {
-    licenseBadge = "cc";
+    licenseBadge = "https://licensebuttons.net/l/zero/1.0/80x15.png";
   } else if (license == "MIT") {
-    licenseBadge = "mit";
+    licenseBadge = "https://img.shields.io/badge/License-MIT-yellow.svg";
   } else if (license == "Do What The F*ck You Want To Public License") {
-    licenseBadge = "wtfpl";
+    licenseBadge = "https://img.shields.io/badge/License-WTFPL-brightgreen.svg";
   } else {
     licenseBadge = "";
   }

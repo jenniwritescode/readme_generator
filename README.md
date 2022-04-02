@@ -27,7 +27,7 @@ SO THAT I can quickly create a professional README for a new project
 
 *Prerequisites*: node.js version 8.x should be installed on your system, please follow [these instructions](https://nodejs.org/en/download/) to install if needed.
 
-To run this program, run the following commands in the terminal:
+To run this program, download the source code (using `git clone` or by downloading the .zip file). Unzip file if needed. Open a Terminal window, navigate to the directory for readme_generator, and run the following commands in the terminal:
 
     npm i
 
@@ -46,3 +46,5 @@ then
 ## Links
 
 [Project Repository](https://github.com/jenniwritescode/readme-generator)
+
+[![License: WTFPL](https://img.shields.io/badge/License-WTFPL-brightgreen.svg)](http://www.wtfpl.net/about/)

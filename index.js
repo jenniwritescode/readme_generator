@@ -3,6 +3,7 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 const generate = require('./utils/generateMarkdown');
 
+// ask user questions
 inquirer
   .prompt([
     {
@@ -73,11 +74,13 @@ inquirer
       ],
     },
   ])
+  // generate README file
   .then(function writeFile(answers) {
     let markdown = generate(answers);
     fs.writeFile("myREADME.md", markdown, (err) =>
       err ? console.log(err) : console.log("success"))
   })
+  //catch errors
   .catch((error) => {
     console.log(error);
     if (error.isTtyError) {

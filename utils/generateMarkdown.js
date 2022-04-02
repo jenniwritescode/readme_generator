@@ -1,3 +1,4 @@
+// create markdown document using answers to questions
 function generateMarkdown({
   gitname,
   email,
@@ -54,6 +55,7 @@ Code released under the ${license} license.
 `;
 }
 
+// create license badge based on user choice of license
 function renderLicenseBadge(license) {
   let licenseBadge = "";
   if (license == "Apache license 2.0") {
@@ -70,6 +72,7 @@ function renderLicenseBadge(license) {
   return licenseBadge;
 }
 
+// create license link based on user choice of license
 function renderLicenseLink(license) {
   let licenseLink = "";
   if (license == "Apache license 2.0") {

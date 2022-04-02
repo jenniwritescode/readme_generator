@@ -6,6 +6,7 @@
 - [User Story](#user-story)
 - [Installation Instructions](#installation)
 - [Working Example](#working-example)
+- [Example Output](#example-output-readme-file)
 - [Links](#links)
 
 
@@ -28,12 +29,19 @@ SO THAT I can quickly create a professional README for a new project
 
 To run this program, run the following commands in the terminal:
 
-`npm i`
-`node index.js`
+    npm i
+
+then
+
+    node index.js
 
 ## Working Example
 
+![example demo](./media/generator_example.gif)
 
+## Example Output README File
+
+![screenshot of README doc](./media/readmescreenshot.png)
 
 ## Links
 

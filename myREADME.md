@@ -11,7 +11,7 @@
 
 ## Description
 
-This generator creates READMEs
+This generates README documents
 
 ## Installation Instructions
 
